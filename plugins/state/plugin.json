@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "state",
+  "version": "0.1.0",
+  "description": "Recover the current state of our thinking.",
+  "author": { "name": "User" },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "State",
+        "shortDescription": "Recover thinking state",
+        "longDescription": "Recover the current state of our thinking from the conversation.",
+        "developerName": "User",
+        "category": "Productivity",
+        "capabilities": ["Interactive"],
+        "defaultPrompt": "Recover the current state of our thinking from this conversation."
+      }
+    }
+  }
+}

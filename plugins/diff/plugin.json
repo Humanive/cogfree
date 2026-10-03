@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "diff",
+  "version": "0.1.0",
+  "description": "Identify how our thinking changed over the conversation.",
+  "author": { "name": "User" },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Diff",
+        "shortDescription": "See what changed",
+        "longDescription": "Identify how our thinking changed over the course of the conversation.",
+        "developerName": "User",
+        "category": "Productivity",
+        "capabilities": ["Interactive"],
+        "defaultPrompt": "Identify how our thinking changed over the course of this conversation."
+      }
+    }
+  }
+}

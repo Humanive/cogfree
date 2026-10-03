@@ -2,15 +2,15 @@
 
 Lightweight skills for freeing cognition from working-memory limits.
 
-CogFree helps externalize intent, state, thought history, differences, open questions, and checkpoints so work can be resumed with less cognitive load.
+This collection packages the six small cognitive tools already used as Codex plugins. The source skill instructions are kept in `skills/`; the corresponding plugin manifests are kept in `plugins/`.
 
 ## Skills
 
-- `restate` — clarify the task and intended outcome.
-- `state` — recover the current working state.
-- `timeline` — reconstruct how thinking or work changed over time.
-- `diff` — identify what changed in understanding or artifacts.
-- `open` — surface unresolved questions and next moves.
-- `checkpoint` — save a concise, resumable handoff.
+- `restate-goal` (`problem-framer`) — reconstruct the user's problem frame before solving.
+- `state` — recover the current state of our thinking.
+- `timeline` — reconstruct how our thinking evolved through meaningful phases.
+- `diff` — identify how our thinking changed over the conversation.
+- `open` — identify the important unresolved parts of our thinking.
+- `checkpoint` — create a resumable checkpoint of our current thinking.
 
-The first version is intentionally small. Future versions may add durable external-file records and richer collaboration workflows.
+The V1 stays intentionally lightweight. Future versions may add explicit external-file records without changing the core skill contracts.

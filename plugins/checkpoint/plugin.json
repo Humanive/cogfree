@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "checkpoint",
+  "version": "0.1.0",
+  "description": "Create a resumable checkpoint of our current thinking.",
+  "author": { "name": "User" },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Checkpoint",
+        "shortDescription": "Save thinking checkpoint",
+        "longDescription": "Create a compact checkpoint of the current thinking so it can be resumed later.",
+        "developerName": "User",
+        "category": "Productivity",
+        "capabilities": ["Interactive"],
+        "defaultPrompt": "Create a checkpoint of our current thinking so we can resume from here later."
+      }
+    }
+  }
+}

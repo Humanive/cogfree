@@ -1,6 +1,6 @@
 ---
 name: state
-description: Recover and summarize the current working state so a task can continue.
+description: Recover the current state of our thinking.
 ---
 
-Use when context is fragmented or a task is resuming. Identify completed work, current artifacts, active decisions, blockers, and the next concrete step. Separate observed facts from assumptions.
+Look at the conversation so far and identify the important variables that currently define our thinking state.
