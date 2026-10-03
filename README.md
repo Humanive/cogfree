@@ -17,36 +17,48 @@ The V1 stays intentionally lightweight. Future versions may add explicit externa
 
 ## Install
 
-Use the common skills package with any supported agent:
+### Claude Code
+
+Run in Claude Code:
+
+```text
+/plugin marketplace add Humanive/cogfree
+/plugin install cogfree@cogfree
+```
+
+### Codex
+
+Run in your terminal:
+
+```bash
+codex plugin marketplace add Humanive/cogfree
+codex plugin add cogfree@cogfree
+```
+
+### Pi
+
+Run in your terminal:
+
+```bash
+pi install git:github.com/Humanive/cogfree
+```
+
+### Any supported agent
+
+Install the shared skills directly with `npx skills`:
 
 ```bash
 npx skills add Humanive/cogfree
 ```
 
-Install only a selected skill:
+Install only one skill:
 
 ```bash
 npx skills add Humanive/cogfree --skill restate
 ```
 
-Use the Claude Code plugin package from a local checkout:
-
-```bash
-claude --plugin-dir packages/claude
-```
+The root `skills/` directory is the canonical source. The Codex and Claude packages under `packages/` carry the same six skills in their host-specific plugin layouts. The Pi package uses the standard `package.json` + `skills/` layout and currently provides skills only; it does not add executable Pi tools or extensions.
 
 ## Marketplace installation
 
-For Codex, add this repository as a marketplace and install CogFree:
-
-```bash
-codex plugin marketplace add https://github.com/Humanive/cogfree.git
-codex plugin add cogfree@cogfree
-```
-
-For Claude Code, add the repository as a marketplace and install CogFree:
-
-```bash
-claude plugin marketplace add https://github.com/Humanive/cogfree.git
-claude plugin install cogfree@cogfree
-```
+The repository includes marketplace descriptors at `.codex-plugin/marketplace.json` and `.claude-plugin/marketplace.json` for the commands above.
