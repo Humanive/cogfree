@@ -2,9 +2,12 @@
 
 Lightweight skills for freeing cognition from working-memory limits.
 
-This collection packages the seven small cognitive tools already used as Codex plugins. The canonical skill instructions are kept in `skills/`; the self-contained Codex and Claude plugin packages are generated under `packages/`.
+This collection packages the nine small cognitive tools already used as Codex plugins. The canonical skill instructions are kept in `skills/`; the self-contained Codex and Claude plugin packages are generated under `packages/`.
 
 ## Skills
+
+- `unknowns` — map what we know, do not know, may know implicitly, or may be missing entirely.
+- `grill` — probe thinking iteratively through small sets of useful questions.
 
 - `clarify` — ask the single most important question needed to give a useful answer.
 - `restate` — restate the current goal in clear, simple terms.
@@ -58,7 +61,7 @@ Install only one skill:
 npx skills add Humanive/cogfree --skill restate
 ```
 
-The root `skills/` directory is the canonical source. The Codex and Claude packages under `packages/` carry the same seven skills in their host-specific plugin layouts. The Pi package uses the standard `package.json` + `skills/` layout and currently provides skills only; it does not add executable Pi tools or extensions.
+The root `skills/` directory is the canonical source. The Codex and Claude packages under `packages/` carry the same nine skills in their host-specific plugin layouts. The Pi package uses the standard `package.json` + `skills/` layout and currently provides skills only; it does not add executable Pi tools or extensions.
 
 ## Marketplace installation
 
