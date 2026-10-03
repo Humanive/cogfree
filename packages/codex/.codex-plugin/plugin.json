@@ -1,0 +1,17 @@
+{
+  "interface": {
+    "displayName": "CogFree",
+    "shortDescription": "Lightweight skills for freeing cognition",
+    "longDescription": "A small collection of skills for externalizing and continuing thought across Codex sessions.",
+    "developerName": "Humanive",
+    "category": "Productivity",
+    "capabilities": ["Interactive"],
+    "defaultPrompt": "Use CogFree to externalize the current thinking."
+  },
+  "name": "cogfree",
+  "version": "0.1.0",
+  "description": "Lightweight skills for freeing cognition from working-memory limits.",
+  "author": { "name": "Humanive" },
+  "keywords": ["cognition", "thinking", "state", "checkpoint"],
+  "skills": "./skills"
+}

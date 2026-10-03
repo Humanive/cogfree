@@ -14,3 +14,31 @@ This collection packages the six small cognitive tools already used as Codex plu
 - `checkpoint` — create a resumable checkpoint of our current thinking.
 
 The V1 stays intentionally lightweight. Future versions may add explicit external-file records without changing the core skill contracts.
+
+## Install
+
+Use the common skills package with any supported agent:
+
+```bash
+npx skills add Humanive/cogfree
+```
+
+Install only a selected skill:
+
+```bash
+npx skills add Humanive/cogfree --skill restate
+```
+
+Use the Codex plugin package from a local checkout:
+
+```bash
+codex --plugin-dir packages/codex
+```
+
+Use the Claude Code plugin package from a local checkout:
+
+```bash
+claude --plugin-dir packages/claude
+```
+
+The Claude marketplace descriptor is `claude-marketplace.json`; copy it to `.claude-plugin/marketplace.json` in a marketplace repository when publishing a marketplace.
