@@ -29,18 +29,11 @@ Install only a selected skill:
 npx skills add Humanive/cogfree --skill restate
 ```
 
-Use the Codex plugin package from a local checkout:
-
-```bash
-codex --plugin-dir packages/codex
-```
-
 Use the Claude Code plugin package from a local checkout:
 
 ```bash
 claude --plugin-dir packages/claude
 ```
-
 
 ## Marketplace installation
 
