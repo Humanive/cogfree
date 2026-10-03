@@ -2,7 +2,7 @@
 
 Lightweight skills for freeing cognition from working-memory limits.
 
-This collection packages the six small cognitive tools already used as Codex plugins. The source skill instructions are kept in `skills/`; the corresponding plugin manifests are kept in `plugins/`.
+This collection packages the six small cognitive tools already used as Codex plugins. The canonical skill instructions are kept in `skills/`; the self-contained Codex and Claude plugin packages are generated under `packages/`.
 
 ## Skills
 
@@ -41,7 +41,6 @@ Use the Claude Code plugin package from a local checkout:
 claude --plugin-dir packages/claude
 ```
 
-The Claude marketplace descriptor is `claude-marketplace.json`; copy it to `.claude-plugin/marketplace.json` in a marketplace repository when publishing a marketplace.
 
 ## Marketplace installation
 
