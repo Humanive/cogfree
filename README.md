@@ -42,3 +42,19 @@ claude --plugin-dir packages/claude
 ```
 
 The Claude marketplace descriptor is `claude-marketplace.json`; copy it to `.claude-plugin/marketplace.json` in a marketplace repository when publishing a marketplace.
+
+## Marketplace installation
+
+For Codex, add this repository as a marketplace and install CogFree:
+
+```bash
+codex plugin marketplace add https://github.com/Humanive/cogfree.git
+codex plugin add cogfree@cogfree
+```
+
+For Claude Code, add the repository as a marketplace and install CogFree:
+
+```bash
+claude plugin marketplace add https://github.com/Humanive/cogfree.git
+claude plugin install cogfree@cogfree
+```

@@ -1,0 +1,11 @@
+{
+  "name": "cogfree",
+  "owner": { "name": "Humanive", "github": "Humanive" },
+  "plugins": [
+    {
+      "name": "cogfree",
+      "description": "Lightweight skills for freeing cognition from working-memory limits.",
+      "source": "./packages/claude"
+    }
+  ]
+}
