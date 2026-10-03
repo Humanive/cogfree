@@ -6,7 +6,7 @@ This collection packages the six small cognitive tools already used as Codex plu
 
 ## Skills
 
-- `restate-goal` (`problem-framer`) — reconstruct the user's problem frame before solving.
+- `restate` — restate the current goal in clear, simple terms.
 - `state` — recover the current state of our thinking.
 - `timeline` — reconstruct how our thinking evolved through meaningful phases.
 - `diff` — identify how our thinking changed over the conversation.
