@@ -1,6 +1,8 @@
 {
   "name": "cogfree",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lightweight skills for freeing cognition from working-memory limits.",
-  "author": { "name": "Humanive" }
+  "author": {
+    "name": "Humanive"
+  }
 }

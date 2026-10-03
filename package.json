@@ -1,10 +1,16 @@
 {
   "name": "cogfree",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Lightweight skills for freeing cognition from working-memory limits.",
   "license": "MIT",
-  "keywords": ["pi-package", "agent-skills", "cognition"],
+  "keywords": [
+    "pi-package",
+    "agent-skills",
+    "cognition"
+  ],
   "pi": {
-    "skills": ["./skills"]
+    "skills": [
+      "./skills"
+    ]
   }
 }
