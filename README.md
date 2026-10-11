@@ -2,46 +2,55 @@
 
 Lightweight skills for freeing cognition from working-memory limits.
 
-This collection packages the 19 lightweight cognitive skills. The canonical skill instructions are kept in `skills/`; the self-contained Codex and Claude plugin packages are generated under `packages/`.
+This collection packages 28 lightweight cognitive skills. The canonical skill instructions are kept in `skills/`; the self-contained Codex and Claude plugin packages are generated under `packages/`.
 
 ## Skills
 
-```text
-                              THINKING
-                                 |
-          +----------------------+----------------------+----------------------+
-          |                      |                      |                      |
-      Understand              Inspect               Transform               Continue
-          |                      |                      |                      |
-       restate                 state                 abstract                branch
-       clarify                 unknowns              ground                  anchor
-       grill                   assumptions           challenge               next
-                               open                  compress                checkpoint
-                               timeline              reframe
-                               diff                  compare
-```
+### Understand
 
 - `restate` — restate your intent before continuing.
 - `clarify` — ask the single most important clarification question.
 - `grill` — probe thinking iteratively through small sets of useful questions.
+- `reconstruct` — derive a concept by rebuilding why it had to be invented.
+
+### Inspect
+
 - `state` — recover the current state of our thinking.
 - `unknowns` — map what is known, unknown, implicit, or potentially missing.
 - `assumptions` — identify what our current thinking depends on.
 - `open` — identify important unresolved parts of our thinking.
 - `timeline` — reconstruct how our thinking evolved through meaningful phases.
 - `diff` — identify how our thinking changed over the conversation.
+
+### Transform
+
 - `abstract` — find the most general useful pattern or principle.
 - `ground` — return to concrete mechanisms, examples, or situations.
-- `challenge` — find the strongest counterarguments, counterexamples, or failure cases.
 - `compress` — find the smallest useful representation of our thinking.
 - `reframe` — explore a different representation or perspective.
 - `compare` — compare competing ideas or interpretations.
+- `synthesize` — combine important ideas into one coherent model.
+- `transfer` — apply an insight to other problems, domains, or situations.
+
+### Evaluate
+
+- `challenge` — find the strongest counterarguments, counterexamples, or failure cases.
+- `prediction` — derive observable predictions from our current understanding.
+- `test` — test whether our current understanding holds.
+- `verify` — check important claims against available evidence.
+
+### Continue
+
 - `branch` — identify meaningful directions to explore.
 - `anchor` — reconnect the discussion to your original intent.
-- `next` — identify useful candidate next steps.
 - `checkpoint` — create a resumable checkpoint of our current thinking.
 
-The V1 stays intentionally lightweight. Future versions may add explicit external-file records without changing the core skill contracts.
+### Execute
+
+- `next` — identify useful candidate next steps.
+- `prioritize` — rank questions or branches by expected value for our goal.
+- `act` — turn the response into one clear, executable next action.
+- `delegate` — turn a request into a clear, verifiable agent brief.
 
 ## Install
 
@@ -85,7 +94,7 @@ Install only one skill:
 npx skills add Humanive/cogfree --skill restate
 ```
 
-The root `skills/` directory is the canonical source. The Codex and Claude packages under `packages/` carry the same 19 skills in their host-specific plugin layouts. The Pi package uses the standard `package.json` + `skills/` layout and currently provides skills only; it does not add executable Pi tools or extensions.
+The root `skills/` directory is the canonical source. The Claude and Codex plugins use the host-specific layouts under `packages/`. Pi and `npx skills` install directly from the root `skills/` directory. The Pi package does not add executable tools or extensions.
 
 ## Marketplace installation
 
